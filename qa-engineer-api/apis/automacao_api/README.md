@@ -68,5 +68,5 @@ Para executar um teste especifico
 
 ```
     docker-compose -f docker-compose.yml up --build
-    docker-compose -f docker-compose.yml run api cucumber -t `@token_invalido`
+    docker-compose -f docker-compose.yml run api cucumber -t @token_invalido
 ```
