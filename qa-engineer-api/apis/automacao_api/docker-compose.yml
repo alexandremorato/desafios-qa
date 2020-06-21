@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  api:
+    build: .
+    environment:
+      - TOKEN=$TOKEN
+      - NOME=$NOME
+      - CPF=$CPF
+      - DATA_NASC=$DATA_NASC
+      - TOKEN_INVALIDO=$TOKEN_INVALIDO
+    volumes:
+      - .:/app    

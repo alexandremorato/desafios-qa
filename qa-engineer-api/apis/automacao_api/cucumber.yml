@@ -1,0 +1,2 @@
+all: --format html --out report/all.html --format progress 
+relatorio: --tag @relatorio --format html --out report/relatorio.html --format progress

@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  test:
+    build: .
+    environment:
+      - TOKEN=$TOKEN
+      - NOME=$NOME
+      - CPF=$CPF
+      - DATA_NASC=$DATA_NASC
+      - TOKEN_INVALIDO=$TOKEN_INVALIDO
+    command: bundle exec cucumber -p all  
+    volumes:
+      - .:/app
